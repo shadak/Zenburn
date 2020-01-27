@@ -305,7 +305,7 @@ if exists("g:zenburn_high_Contrast") && g:zenburn_high_Contrast
     endif
     hi FoldColumn    guibg=#161616                         ctermbg=233 ctermfg=109
     hi Folded        guibg=#161616                         ctermbg=233 ctermfg=109
-    hi LineNr        guifg=#9fafaf guibg=#161616           ctermfg=248 ctermbg=233
+    hi LineNr        guifg=#9fafaf guibg=#161616           ctermfg=none ctermbg=NONE
     hi NonText       guifg=#404040 gui=bold                ctermfg=238
     hi Pmenu         guibg=#242424 guifg=#ccccbc           ctermfg=251 ctermbg=235
     hi PmenuSel      guibg=#353a37 guifg=#ccdc90 gui=bold  ctermfg=187 ctermbg=236 cterm=bold
@@ -329,7 +329,7 @@ else
     endif
     hi FoldColumn    guibg=#333333                         ctermbg=236 ctermfg=109
     hi Folded        guibg=#333333                         ctermbg=236 ctermfg=109
-    hi LineNr        guifg=#9fafaf guibg=#262626           ctermfg=248 ctermbg=235
+    hi LineNr        guifg=#9fafaf guibg=#262626           ctermfg=235 ctermbg=NONE
     hi NonText       guifg=#5b605e gui=bold                ctermfg=240
     hi Pmenu         guibg=#2c2e2e guifg=#9f9f9f           ctermfg=248 ctermbg=235
     hi PmenuSel      guibg=#242424 guifg=#d0d0a0 gui=bold  ctermfg=187 ctermbg=235 cterm=bold
@@ -341,6 +341,7 @@ else
     hi TabLineFill   guifg=#dccdcc guibg=#101010 gui=none  ctermbg=233 ctermfg=188 cterm=none
 
     hi StatusLine    ctermbg=144
+		hi EndOfBuffer 	 ctermbg=NONE ctermfg=237
 endif
 
 if exists("g:zenburn_force_dark_Background") && g:zenburn_force_dark_Background
